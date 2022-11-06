@@ -1,0 +1,532 @@
+.logo img{
+    height: 50px;
+    border-radius: 30%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1280px;
+    margin: auto;
+
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* background-size: cover; La imagen es renderizada, preservando su proporción propia, en el tamaño 
+mayor contenido dentro de, o cubriendo, el área de posicionamiento de fondo */
+header{
+    background: url(img/encab.jpg);
+    background-size: cover;
+    height: 40vh;
+    
+
+}
+
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* con esto pongo el menu uno al lado de otro  a la derecha */
+header ul{
+    display: flex;
+}
+
+header ul li{
+    margin: 0 20px;
+}
+header ul li a{
+    color: #fff;
+}
+
+.titular{
+    text-align: center;
+    margin-top: 40vh;
+    color: #fff;
+}
+
+h1{
+    font-size: 80px;
+    font-style: italic;;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.titular a{
+    background: #000;
+    color: #C2E71F;
+    padding: 20px 30px;
+}
+
+.contenedor-tarjetas{
+    display: flex;
+    justify-content: center;
+}
+
+.tarjeta{
+   text-align: center;
+   box-shadow: -1px 0px 5px #0000001f;
+   width: 28%;
+   margin-top: -100px;
+   background: #fff;
+}
+
+#segunda-tarjeta{
+    margin: 0 20px;
+    margin-top: -100px;
+}
+
+.tarjeta p{
+    font-size: 15px;
+}
+
+
+/* ubicacion */
+.titul h2{
+   color: rgb(47, 51, 50);
+}
+
+/* galeria */
+#galeria {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+#galeria img{
+    width: 100%;
+    transition: 0.2s;
+    
+}
+
+#galeria .foto{
+    width: 26%;
+    position: relative;
+    
+    /* evito que la foto supere el tamaño de class */
+    overflow: hidden;
+}
+
+.oculto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00000026;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    display: none;
+}
+
+.oculto h4{
+    position: relative;
+    top: 40%;
+
+}
+
+.agrandar{
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+.ifClases{
+   width: 100% !important;   
+   height: 300px;
+}
+
+#clases h3{
+    text-align: center;
+}
+
+#clases{
+    background: #e8e8e8;
+}
+.blanco, th{
+    background: #fff;
+}
+th{
+    padding: 20px 0;
+    font-style: italic;
+}
+.gris{
+    background: #e8e8e8;
+}
+.negrit{
+    font-weight: bold;
+}
+/* tabla de clases */
+table{
+    width: 100%;
+    text-align: center;
+}
+
+.ifGaleria{
+    width: 100% !important;   
+    height: 600px;
+ }
+
+
+ .ifUbi{
+    width: 100% !important;   
+    height: 600px;
+ }
+
+ .ifcontacto{
+    width: 100% !important;   
+    height: 600px;
+ }
+
+
+ footer{
+    width: 100%;
+    
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+ }
+
+ /* formulario */
+ .login {
+    width: 360px;
+    height: min-content;
+    padding: 20px;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.login h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.login form {
+    font-size: 20px;
+}
+
+.login form .form-group {
+    margin-bottom: 12px;
+}
+
+.login form input[type="submit"] {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+
+
+
+
+/* GRID Contanos.html*/
+/* headr */
+.headr{
+    background-color: lightblue;
+    grid-area: headr;
+}
+/* mainn */
+.mainn{
+    background-color: rgb(218, 230, 173);
+    grid-area: pepito;
+}
+/* aaside */
+.aaside{
+    background-color: lightgray;
+    grid-area: aside;
+}
+
+.aaside h3{
+    font-family: 'Permanent Marker', cursive;
+}
+
+/* foooter */
+.foooter{
+    background-color: rgb(100, 96, 97);
+    grid-area: footer;
+}
+
+.containr{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "headr headr headr headr"
+    "pepito  pepito aside aside"
+    "footer footer footer footer"
+    ;
+    column-gap: 20px;
+    background-color: beige;
+}
+
+/****grid.html***/
+
+
+.box-1{
+    background-color: lightblue;
+    grid-column: 1 /6;
+    grid-row: 1 /2;
+    justify-self: center;
+    align-self: center;
+}
+.box-2{
+    background-color: rgba(214, 230, 173, 0.845);
+    grid-column: 1 /3;
+    grid-row: 2/3;
+}
+.box-3{
+    background-color: rgba(230, 173, 225, 0.262);
+    grid-column: 2 /4;
+    grid-row: 2/3;
+}
+.box-4{
+    background-color: rgb(230, 173, 194);
+}
+.box-5{
+    background-color: rgb(230, 173, 173);
+}
+
+.grid-container-2{
+    width: 100%;
+    height: 100vh;
+    background-color: beige;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(4, 1fr) ;
+/*
+    justify-content: center;
+   align-items: center;*/
+
+}
+
+
+/* mobile first  GALERIA.HTML */
+
+.box1 {
+    background-color: lightblue;
+    grid-area: box1;
+}
+.box2 {
+    background-color: rgb(184, 184, 184);
+    grid-area: box2;
+}
+
+
+.container{
+    display: grid;
+    
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: 
+    "box1"
+    "box1"
+    "box1"
+    "box1"
+    "box2"
+    "box2"
+    ;
+}
+
+@media (min-width: 768px){
+    .container{
+        
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        "box1 box1 box1"
+        "box1 box1 box1"
+        "box1 box1 box1"
+        "box2 box2 box2"
+        
+        
+        
+        
+        ;
+    }
+}
+
+@media (min-width:992px){
+    .container{
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        "box1 box1 box1 box1 box1"
+        "box1 box1 box1 box1 box1"
+        "box1 box1 box1 box1 box1"
+        "box2 box2 box2 box2 box2"
+        
+        
+        ;
+    }
+}
+
+
+
+
+/* responsive web UBICACION.HTML*/
+
+.ubi{
+    height: 200px;
+    border-radius: 30%;
+    
+}
+
+
+.box-6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: grid;
+    height: 90vh;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "box-6 box-6 box-6 box-7"
+    "box-6 box-6 box-6 box-7"
+    "box-6 box-6 box-6 box-7"
+    ;
+
+    
+}
+.box-6 {
+    background-color: rgb(217, 224, 226);
+    grid-area: box-6;
+    justify-items: center;
+    align-content: center;
+   
+
+}
+
+
+
+.box-7 {
+    background-color: rgb(45, 151, 201);
+    grid-area: box-7;
+}
+
+/*tablet **/
+@media (max-width:768px){
+
+    .container{
+        
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat( 3, 1fr) ;
+        grid-template-areas: 
+        "box-6 box-6 box-7"
+        "box-6 box-6 box-7"
+        "box-6 box-6 box-7"
+       
+        ;
+    }
+    .box-6{
+        background-color: yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*mobile*/
+@media (max-width: 576px){
+
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,1fr);
+        grid-template-areas: 
+   
+        "box-6"
+        "box-6"
+        "box-6"
+        "box-7"
+        "box-7"
+        ;
+    }
+    .box-6{
+        background-color: burlywood;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .box-8{
+        display: none;
+    }
+}
+
+
+.box-7{
+   
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(#46D1AF,#8DE1C6, #0b6ab8);
+    display: grid;
+    place-content: center;
+    border-radius: 50% 50% 50%  50%;
+    border: 3px solid #555;
+      
+    position: relative;
+}
+
+.box-7 img{
+    height: 150px;
+    border-radius: 30% ;
+    /* width: 100px;
+    height: 100px;
+    transform: skewY(8deg); */
+    /* transform: rotate(20deg); */
+    
+}
+
+
+/* animacion */
+
+    /* esta  caja seria el div de mi difuminacion */
+.box-7:hover{
+    animation-name: fiufiu;
+    animation-duration: 15s;
+}
+
+@keyframes fiufiu {
+    0%{
+        /* background-color: red; */
+        background: radial-gradient(#46D1AF,#8DE1C6, #0b6ab8);
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        /* background-color: yellow; */
+        background: radial-gradient(#46D1AF,#8DE1C6, #d128e0);
+        left: 0px;
+        top: 200px;
+    }
+
+    50%{
+        /* background-color: blue; */
+        background: radial-gradient(#46D1AF,#8DE1C6, #f1e865);
+        top: 200px;
+        top: 0px;
+    } 
+    
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="menu">
+                <div class="logo"><img src="./img/fitness-2.png" alt=""></div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./contanos.html">contanos</a></li>
+                        <li><a href="./ubicacion.html">Ubicacion</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+  
+    <main class="container">
+        <div class="box1">
+
+            <section id="galeria">
+                <!-- <div class="contenedor-fotos"> -->
+                    <div class="foto">
+                        <img class="img-hover" src="../img/encabezado.jpg" alt="">
+                        <div class="oculto"><h4>clase1</h4></div>
+                    </div>
+            
+                <!-- </div> -->
+            
+                <!-- <div class="contenedor-fotos"> -->
+                    <div class="foto">
+                        <img class="img-hover" src="../img/logo.jpg" alt="">
+                        <div class="oculto"><h4>clase2</h4></div>
+                    </div>
+            
+                <!-- </div> -->
+            
+                <!-- <div class="contenedor-fotos"> -->
+                    <div class="foto">
+                        <img class="img-hover" src="../img/150817145859_mujeres_gimnasio_624x351_getty.jpg" alt="">
+                        <div class="oculto"><h4>clase3</h4></div>
+                    </div>
+            
+                <!-- </div> -->
+                <!-- <div class="contenedor-fotos"> -->
+                    <div class="foto">
+                        <img class="img-hover" src="../img/pexels-leon-ardho-1552242.jpg" alt="">
+                        <div class="oculto"><h4>clase4</h4></div>
+                    </div>
+            
+                <!-- </div> -->
+            
+                <!-- <div class="contenedor-fotos"> -->
+                    <div class="foto">
+                        <img class="img-hover" src="../img/pexels-pixabay-414029.jpg" alt="">
+                        <div class="oculto"><h4>clase5</h4></div>
+                    </div>
+            
+                <!-- </div> -->
+            
+                <!-- <div class="contenedor-fotos"> -->
+                    <div class="foto">
+                        <img class="img-hover" src="../img/cardio.jpg" alt="">
+                        <div class="oculto"><h4>clase6</h4></div>
+                    </div>
+            
+                <!-- </div> -->
+            </section>
+            
+        
+        
+        <!-- inserto jquery -->
+            <script
+          src="https://code.jquery.com/jquery-3.6.1.min.js"
+          integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+          crossorigin="anonymous"></script>
+        
+          <!-- codigo jquery -->
+          <script>
+               $(document).ready(function(){
+                $(".foto").hover(function() {
+                    $(this).find(".oculto").fadeIn();
+                    $(this).find(".img-hover").addClass("agrandar");
+                }, function(){
+                    $(this).find(".oculto").fadeOut();
+                    $(this).find(".img-hover").removeClass("agrandar");
+                })
+               })
+        
+          </script>
+        
+
+        </div>
+        <div class="box2" >box2</div>
+       
+    </main>
+
+
+
+    
+<footer>
+        
+    <div class="logo"><img src="../img/fitness-2.png" alt=""></div>
+    <div class="social-icons-container">
+        <a href="" class="social-icon"></a>
+        <a href="" class="social-icon"></a>
+    </div>
+</footer>
+</body>
